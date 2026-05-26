@@ -22,6 +22,7 @@ export const colors = {
 
 export const layout = {
   screenTop: Platform.OS === 'android' ? 30 : 0,
+  statusContentOffset: 10,
   navBottom: Platform.OS === 'android' ? 30 : 20,
   navHeight: 72,
   radius: 14,

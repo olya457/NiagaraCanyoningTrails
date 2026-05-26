@@ -218,12 +218,12 @@ const styles = StyleSheet.create({
   root: {
     flex: 1,
     backgroundColor: colors.forest,
-    paddingTop: layout.screenTop + 42,
+    paddingTop: layout.screenTop + layout.statusContentOffset + 42,
     paddingHorizontal: 16,
     paddingBottom: layout.navHeight + layout.navBottom + 10,
   },
   rootCompact: {
-    paddingTop: layout.screenTop + 26,
+    paddingTop: layout.screenTop + layout.statusContentOffset + 26,
     paddingBottom: layout.navHeight + layout.navBottom + 8,
   },
   header: {

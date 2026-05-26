@@ -1,4 +1,4 @@
-package com.niagaracanyoningtrails
+package com.niagara.canyoning.trails
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

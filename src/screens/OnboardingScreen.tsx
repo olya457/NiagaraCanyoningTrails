@@ -52,7 +52,7 @@ export function OnboardingScreen({onDone}: Props): React.JSX.Element {
   const isLast = index === slides.length - 1;
   const compactHeight = height < 720;
   const narrow = width < 360;
-  const topOffset = layout.screenTop + 80;
+  const topOffset = layout.screenTop + layout.statusContentOffset + 80;
   const bottomPadding = layout.navBottom + (compactHeight ? 24 : 52);
   const bottomGap = compactHeight ? 12 : 18;
   const titleSize = clamp(width * 0.078, 25, compactHeight ? 28 : 30);

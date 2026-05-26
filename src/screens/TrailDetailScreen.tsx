@@ -111,7 +111,7 @@ export function TrailDetailScreen({
 
 const styles = StyleSheet.create({
   content: {
-    paddingTop: 0,
+    paddingTop: layout.statusContentOffset,
     paddingHorizontal: 0,
     paddingBottom: 30,
   },

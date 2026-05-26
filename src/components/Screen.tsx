@@ -28,7 +28,8 @@ export function Screen({
 }: Props): React.JSX.Element {
   const {height} = useWindowDimensions();
   const compactHeight = height < 720;
-  const topPadding = layout.screenTop + (compactHeight ? 24 : 42);
+  const topPadding =
+    layout.screenTop + layout.statusContentOffset + (compactHeight ? 24 : 42);
   const bottomPadding = withTabBar
     ? layout.navHeight + layout.navBottom + (compactHeight ? 8 : 18) + bottomExtra
     : layout.navBottom + (compactHeight ? 16 : 24) + bottomExtra;
@@ -39,7 +40,10 @@ export function Screen({
         <View
           style={[
             styles.staticContent,
-            {paddingTop: layout.screenTop, paddingBottom: bottomPadding},
+            {
+              paddingTop: layout.screenTop + layout.statusContentOffset,
+              paddingBottom: bottomPadding,
+            },
             contentStyle,
           ]}>
           {children}
