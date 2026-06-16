@@ -86,7 +86,7 @@ export function OnboardingScreen({onDone}: Props): React.JSX.Element {
           accessibilityRole="button"
           onPress={onDone}
           style={styles.skipButton}>
-          <Text style={styles.skipText}>Skip</Text>
+          <Text style={[styles.skipText, styles.imageTextShadow]}>Skip</Text>
         </Pressable>
       </View>
 
@@ -98,12 +98,20 @@ export function OnboardingScreen({onDone}: Props): React.JSX.Element {
           numberOfLines={2}
           adjustsFontSizeToFit
           minimumFontScale={0.82}
-          style={[styles.title, {fontSize: titleSize, lineHeight: titleLineHeight}]}>
+          style={[
+            styles.title,
+            styles.imageTextShadow,
+            {fontSize: titleSize, lineHeight: titleLineHeight},
+          ]}>
           {slide.title}
         </Text>
         <Text
           numberOfLines={compactHeight || narrow ? 2 : 3}
-          style={[styles.text, compactHeight && styles.textCompact]}>
+          style={[
+            styles.text,
+            styles.imageTextShadow,
+            compactHeight && styles.textCompact,
+          ]}>
           {slide.text}
         </Text>
         <PrimaryButton
@@ -141,14 +149,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   skipText: {
-    color: colors.stone,
+    color: colors.white,
     fontSize: 14,
     fontWeight: '800',
     letterSpacing: 0,
   },
   fade: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: 'rgba(3,27,16,0.18)',
+    backgroundColor: 'rgba(0,0,0,0.32)',
   },
   bottom: {
     position: 'absolute',
@@ -179,12 +187,12 @@ const styles = StyleSheet.create({
     backgroundColor: colors.gold,
   },
   title: {
-    color: colors.sand,
+    color: colors.white,
     fontWeight: '900',
     letterSpacing: 0,
   },
   text: {
-    color: colors.stone,
+    color: colors.white,
     fontSize: 16,
     lineHeight: 24,
     marginBottom: 24,
@@ -193,5 +201,10 @@ const styles = StyleSheet.create({
     fontSize: 14,
     lineHeight: 20,
     marginBottom: 12,
+  },
+  imageTextShadow: {
+    textShadowColor: 'rgba(0,0,0,0.84)',
+    textShadowOffset: {width: 0, height: 2},
+    textShadowRadius: 8,
   },
 });

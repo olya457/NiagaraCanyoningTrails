@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     gap: 9,
   },
   icon: {
-    color: 'rgba(167,182,167,0.58)',
+    color: 'rgba(232,247,243,0.72)',
     fontSize: 22,
   },
   iconActive: {

@@ -65,7 +65,11 @@ export function TrailDetailScreen({
             numberOfLines={2}
             adjustsFontSizeToFit
             minimumFontScale={0.8}
-            style={[styles.title, {fontSize: titleSize, lineHeight: titleSize + 5}]}>
+            style={[
+              styles.title,
+              styles.imageTextShadow,
+              {fontSize: titleSize, lineHeight: titleSize + 5},
+            ]}>
             {trail.name}
           </Text>
         </View>
@@ -124,7 +128,7 @@ const styles = StyleSheet.create({
   },
   heroScrim: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: 'rgba(3,27,16,0.2)',
+    backgroundColor: 'rgba(3,27,16,0.32)',
   },
   heroActions: {
     position: 'absolute',
@@ -181,9 +185,14 @@ const styles = StyleSheet.create({
     letterSpacing: 1.2,
   },
   title: {
-    color: colors.sand,
+    color: colors.white,
     fontWeight: '900',
     letterSpacing: 0,
+  },
+  imageTextShadow: {
+    textShadowColor: 'rgba(0,0,0,0.82)',
+    textShadowOffset: {width: 0, height: 2},
+    textShadowRadius: 8,
   },
   infoCard: {
     marginHorizontal: 16,

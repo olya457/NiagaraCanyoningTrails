@@ -77,9 +77,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.niagara.canyoning.trails"
+    namespace "com.niagarafallsjourney"
     defaultConfig {
-        applicationId "com.niagara.canyoning.trails"
+        applicationId "com.niagarafallsjourney"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

@@ -21,7 +21,7 @@ const initialRegion: Region = {
 
 const mapStyle = [
   {elementType: 'geometry', stylers: [{color: '#092f1c'}]},
-  {elementType: 'labels.text.fill', stylers: [{color: '#7aa39c'}]},
+  {elementType: 'labels.text.fill', stylers: [{color: '#d7f7f1'}]},
   {elementType: 'labels.text.stroke', stylers: [{color: '#092f1c'}]},
   {featureType: 'water', elementType: 'geometry', stylers: [{color: '#123f49'}]},
   {featureType: 'road', elementType: 'geometry', stylers: [{color: '#1c5137'}]},
