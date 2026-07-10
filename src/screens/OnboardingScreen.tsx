@@ -20,7 +20,7 @@ type Slide = {
 
 const slides: Slide[] = [
   {
-    title: 'Welcome to Niagara Canyoning',
+    title: 'Welcome to Niagara Adventure Guide',
     text: 'Explore waterfall canyons and concealed river routes across Niagara.',
     background: images.onboardingOne,
   },
